@@ -8,4 +8,27 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Content
+		Include="Resources\me3\**\*.*"
+		Exclude="Resources\me3\sekiro-bingo\mod\.smithbox\**\*.*;Resources\me3\sekiro-bingo\mod\recovery\**\*.*;Resources\me3\sekiro-bingo\mod\**\*.prev;Resources\me3\sekiro-bingo\mod\**\*.bak;Resources\me3\sekiro-bingo\mod\**\*.js*;"
+		>
+		<Link>%(RecursiveDir)%(Filename)%(Extension)</Link>
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        <CopyToPublishDirectory>Always</CopyToPublishDirectory>
+        <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+  </ItemGroup>
+
+	<!--<ItemGroup>
+		<PublishAsset Include="Resources\me3" />
+	</ItemGroup>
+
+	<Target Name="CopyAssetsToPublishDir" AfterTargets="Publish">
+		<MakeDir Directories="$(PublishDir)me3\" />
+		<Copy
+		  SourceFiles="@(PublishAsset)"
+		  DestinationFiles="@(PublishAsset->'$(PublishDir)AppData\%(RecursiveDir)%(Filename)%(Extension)')"
+		  SkipUnchangedFiles="true" />
+	</Target>-->
 </Project>
