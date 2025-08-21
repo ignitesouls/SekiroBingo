@@ -3,6 +3,9 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
+# Smithbox recovery folder
+Resources\me3\sekiro-bingo\mod\recovery\*
+
 # User-specific files
 *.rsuser
 *.suo
