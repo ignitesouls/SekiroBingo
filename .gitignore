@@ -6,6 +6,10 @@
 # Smithbox recovery folder
 SekiroBingo/Resources/me3/sekiro-bingo/mod/recovery
 
+# NPC developer dependencies and local environments
+tools/npc/.deps/
+tools/npc/.venv/
+
 # User-specific files
 *.rsuser
 *.suo
