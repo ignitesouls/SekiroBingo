@@ -3,6 +3,10 @@ profileVersion = "v1"
 [[supports]]
 game = "sekiro"
 
-[[package]]
+[[packages]]
 id = "sekiro-bingo"
 path = "sekiro-bingo\\mod"
+
+[[natives]]
+path = 'qol/BingoQoL.dll'
+initializer = { function = 'BingoQoL_Initialize' }
