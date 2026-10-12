@@ -24,7 +24,7 @@ progression alternatives in the staging source are not active.
 
 ## How to Install and Play
 1. Navigate to the [latest release](https://github.com/ignitesouls/SekiroBingo/releases/latest)
-2. Download the attached zipfile `SekiroBingo.v.0.0.1.zip`
+2. Download the attached zipfile `Sekiro Bingo v0.0.4.zip`
 3. Extract to your file system
 4. Double click `launch-sekiro-bingo.bat` to launch the mod
 
