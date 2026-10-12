@@ -1,0 +1,43 @@
+{
+  "source": "Sekiro Bingo v0.0.4 staged final assets",
+  "files": {
+    "event/common_func.emevd.dcx": {
+      "sha256": "c45de90888b9ca239bfb42da6db4cc9a20cac93b2ef73182aca9c534160e52a3",
+      "previous_sha256": null
+    },
+    "event/m11_01_00_00.emevd.dcx": {
+      "sha256": "ec6257d635587a6d946e0127519c02b49f9ccf4f917629937fd2f8a2b80fdd55",
+      "previous_sha256": null
+    },
+    "event/m20_00_00_00.emevd.dcx": {
+      "sha256": "4a43cdf8336eabac2b27a4e08fcff9ff6403b43e621a8163766bd6b417c7bca3",
+      "previous_sha256": null
+    },
+    "param/gameparam/gameparam.parambnd.dcx": {
+      "sha256": "aaa1abf8d784e5ec01ce362aabfe8619fc7ac75ed9b73227441b5acd8b41cea3",
+      "previous_sha256": "82d6062f109e7ae633c2f4078fc4d5a41ecad9aaa379747b6cc611ed7f95355d"
+    },
+    "script/talk/m11_01_00_00.talkesdbnd.dcx": {
+      "sha256": "a5914f6b6f3de748f34fb2ac0d0fa9812f597dc3b7b9c0a06136b6c5a1d8956e",
+      "previous_sha256": null
+    },
+    "script/talk/m20_00_00_00.talkesdbnd.dcx": {
+      "sha256": "ca5d8ee05a69bb37bf97ec77bec0df9f376d48481f029f3e26091de8702ca8e0",
+      "previous_sha256": null
+    },
+    "event/common.emevd.dcx": {
+      "sha256": "baf328115f47739db827099f009c8b6d1c334c52e6c4fd1a9e5c9e153abd30ce",
+      "unchanged": true
+    },
+    "param/graphicsconfig/graphicsconfig.parambnd.dcx": {
+      "sha256": "8b911390cf57c3032e232a9bb5b84d3fdcc151beb3564d34da304882db400bde",
+      "unchanged": true
+    }
+  },
+  "dependencies": {
+    "bingo": "2e84a77e7b2ae7484e97965380ecc452e2820836",
+    "esdlang": "9fa7fa90849a662b36839f077e321a02f9e992f4",
+    "randomizer": "c1353d04f3d7cd0724e5f03d2743bf7d93d238b9",
+    "soulsformats": "ee1dd61958f60bdc51ce3da548e9a90a8ab39905"
+  }
+}

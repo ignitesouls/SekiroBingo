@@ -20,6 +20,22 @@
     </Content>
   </ItemGroup>
 
+  <Target Name="PublishBingoQoL" BeforeTargets="PrepareForBuild">
+    <MSBuild Projects="$(MSBuildProjectDirectory)\..\BingoQoL\BingoQoL.csproj"
+             Targets="Restore;Publish"
+             Properties="Configuration=$(Configuration);RuntimeIdentifier=win-x64;PublishDir=$(MSBuildProjectDirectory)\..\BingoQoL\bin\$(Configuration)\native\" />
+    <Copy SourceFiles="$(MSBuildProjectDirectory)\..\BingoQoL\bin\$(Configuration)\native\BingoQoL.dll"
+          DestinationFolder="$(MSBuildProjectDirectory)\Resources\me3\qol" />
+    <ItemGroup>
+      <Content Include="Resources\me3\qol\BingoQoL.dll" Condition="'@(Content->AnyHaveMetadataValue('Identity', 'Resources\me3\qol\BingoQoL.dll'))' != 'true'">
+        <Link>qol\BingoQoL.dll</Link>
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        <CopyToPublishDirectory>Always</CopyToPublishDirectory>
+        <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      </Content>
+    </ItemGroup>
+  </Target>
+
 	<!--<ItemGroup>
 		<PublishAsset Include="Resources\me3" />
 	</ItemGroup>
